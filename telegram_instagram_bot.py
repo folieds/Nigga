@@ -29,7 +29,7 @@ def keep_alive():
 keep_alive()
 
 # Initialize the Telegram bot
-application = Application.builder().token(os.getenv("TOKEN")).build()
+application = Application.builder().token(os.getenv("6848204331:AAGMqyJrrb9fQIEcUWGupPoTE9R-rl-mMYQ")).build()
 # List of keywords for different report categories
 report_keywords = {
     "HATE": ["devil", "666", "savage", "love", "hate", "followers", "selling", "sold", "seller", "dick", "ban", "banned", "free", "method", "paid"],
