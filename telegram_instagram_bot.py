@@ -1,6 +1,7 @@
 
 import os
 import random
+from dotenv import load_dotenv
 from collections import defaultdict
 from flask import Flask
 from threading import Thread
@@ -29,8 +30,10 @@ def keep_alive():
 keep_alive()
 
 # Initialize the Telegram bot
-updater = Updater(os.getenv("TOKEN"), use_context=True)
+load_dotenv()  # Loads the variables from .env file
 
+# Now fetch the token
+TOKEN = os.getenv("TOKEN")
 # List of keywords for different report categories
 report_keywords = {
     "HATE": ["devil", "666", "savage", "love", "hate", "followers", "selling", "sold", "seller", "dick", "ban", "banned", "free", "method", "paid"],
