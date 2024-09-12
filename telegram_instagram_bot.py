@@ -1,6 +1,4 @@
-#Sure! Below is the modified code for your Telegram bot that includes inline buttons. This setup will allow users to interact with the bot in a more dynamic way.
 
-### Complete Telegram Bot Code with Inline Buttons
 import os
 import random
 from collections import defaultdict
